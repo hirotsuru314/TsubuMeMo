@@ -1,10 +1,17 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to image_tag('TsubuMeMo_logo.jpeg', alt: 'TsubuMeMo', height: 50), '/', id: "logo" %>
+    <%= link_to image_tag('TsubuMeMo_logo.jpeg', alt: 'TsubuMeMo', height: 50), root_path, id: "logo" %>
     <nav>
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to "TsubuMeMoについて", about_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to "ログアウト", logout_path, method: "delete" %></li>
+        <% else %>
+          <li><%= link_to "ログイン", login_path %></li>
+        <% end %>
+      </ul>
+
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "TsubuMeMoについて",   '#' %></li>
-        <li><%= link_to "ログイン",   '#' %></li>
         <li><%= link_to "管理者", 'http://www.hirotsuru.sakura.ne.jp/portfolio/index.html', target: "_blank" %></li>
       </ul>
     </nav>
