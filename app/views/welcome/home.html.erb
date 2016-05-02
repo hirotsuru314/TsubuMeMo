@@ -14,7 +14,9 @@
       <ol class="posts">
         <%= render @posts %>
       </ol>
+      <%= will_paginate @posts, previous_label: '＜前ページ', next_label: '次ページ＞', :renderer => BootstrapPagination::Rails %>
     <% end %>
+    
     </div>
   </div>
   
