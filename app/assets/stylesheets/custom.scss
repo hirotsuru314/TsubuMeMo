@@ -61,12 +61,6 @@ p {
   margin-right: 20px;
 }
 
-/* TsubuMeMoについて */
-#example {
-  padding-bottom: 50px;
-}
-
-
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -173,4 +167,32 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+/* Welcomeページ */
+.jumbotron {
+  margin-top: 160px;
+}
+
+/* TsubuMeMoについて */
+.about h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.about h4 {
+  padding-top: 20px;
+}
+
+#example {
+  padding-bottom: 50px;
+}
+
+/* 投稿一覧 */
+.glyphicon-edit {
+  margin-left: 15px;
+}
+
+.glyphicon-trash {
+  margin-left: 5px;
 }
